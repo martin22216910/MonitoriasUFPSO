@@ -1,0 +1,13 @@
+@startuml
+class ConHerencia.Entrenador
+class ConHerencia.Futbolista
+class ConHerencia.Masajista
+class ConHerencia.Persona
+class SinHerencia.Entrenador
+class SinHerencia.Futbolista
+class SinHerencia.Masajista
+class monitoriaherencia.MonitoriaHerencia
+ConHerencia.Entrenador --|> ConHerencia.Persona
+ConHerencia.Futbolista --|> ConHerencia.Persona
+ConHerencia.Masajista --|> ConHerencia.Persona
+@enduml
