@@ -14,11 +14,12 @@ import java.util.ArrayList;
 public class Masajista extends Persona{
     private String Titulacion;
     private int aniosExperiencia;
-    private ArrayList listMasajista;
+    public final ArrayList<Masajista> listaM;
     
+    @SuppressWarnings("Convert2Diamond")
     public Masajista() {
         super();
-        listMasajista=new ArrayList();
+        listaM=new ArrayList<Masajista>();
     }
 
 	// constructor, getter y setter

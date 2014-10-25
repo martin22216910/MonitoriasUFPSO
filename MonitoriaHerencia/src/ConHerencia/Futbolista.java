@@ -6,7 +6,8 @@
 package ConHerencia;
 
 import java.util.ArrayList;
-import javafx.print.Collation;
+import java.util.Iterator;
+
 
 
 
@@ -17,12 +18,13 @@ import javafx.print.Collation;
 public class Futbolista extends Persona {
     private int dorsal;
     private String demarcacion;
-    public ArrayList<Futbolista> listf;
+    private ArrayList<Futbolista> listf;
     
     public Futbolista() {
 	super();
         listf=new ArrayList<Futbolista>();
     }
+    
     
 
 	// constructor, getter y setter
@@ -34,6 +36,15 @@ public class Futbolista extends Persona {
 
     public void entrenar() {
 	//...
+    }
+    public void ListarFutbolistas(){
+        System.out.printf("   id  |          Nombre         |           Apellido        |     Edad   |      Otro \n");
+        for (int i = 0; i <getListf().size(); i++) {
+            //Futbolista f=getListf().get(i);
+            //System.out.printf("  %d            %s                     %s                   %d       %s %n",f.getId(),f.getNombre(),f.getApellidos(),f.getEdad(), f.getDorsal());
+            System.out.printf("  %d            %s                     %s                   %d       %s %n",getListf().get(i).getId(),getListf().get(i).getNombre(),getListf().get(i).getApellidos(),getListf().get(i).getEdad(), getListf().get(i).getDorsal());
+        
+        }
     }
 
     /**
@@ -62,6 +73,20 @@ public class Futbolista extends Persona {
      */
     public void setDemarcacion(String demarcacion) {
         this.demarcacion = demarcacion;
+    }
+
+    /**
+     * @return the listf
+     */
+    public ArrayList<Futbolista> getListf() {
+        return listf;
+    }
+
+    /**
+     * @param listf the listf to set
+     */
+    public void setListf(ArrayList<Futbolista> listf) {
+        this.listf = listf;
     }
 
     
