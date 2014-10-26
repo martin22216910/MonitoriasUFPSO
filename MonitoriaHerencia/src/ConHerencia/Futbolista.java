@@ -6,7 +6,6 @@
 package ConHerencia;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 
 
@@ -85,8 +84,8 @@ public class Futbolista extends Persona {
     /**
      * @param listf the listf to set
      */
-    public void setListf(ArrayList<Futbolista> listf) {
-        this.listf = listf;
+    public void setListf(ArrayList<Futbolista> list) {
+        this.listf=list;
     }
 
     
