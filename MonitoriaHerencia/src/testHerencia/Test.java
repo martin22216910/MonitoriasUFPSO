@@ -94,7 +94,8 @@ public class Test implements Serializable{
                             e.ListarEntrenador();
                             break;
                         case 3:
-                            
+                            m.setListaM(listm);
+                            m.ListarMasajista();
                             break;
                         default:
                             System.err.println("¡Opcion Incorecta!");

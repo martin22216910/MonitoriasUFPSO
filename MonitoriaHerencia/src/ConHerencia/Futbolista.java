@@ -37,11 +37,9 @@ public class Futbolista extends Persona {
 	//...
     }
     public void ListarFutbolistas(){
-        System.out.printf("   id  |          Nombre         |           Apellido        |     Edad   |      Otro \n");
+        System.out.printf("%-6S | %-15S | %-15S | %-4S | %-6S | %-10S  %n","ID","Nombre","Apellido","Edad","Dorsal","Demarcacion");
         for (int i = 0; i <getListf().size(); i++) {
-            //Futbolista f=getListf().get(i);
-            //System.out.printf("  %d            %s                     %s                   %d       %s %n",f.getId(),f.getNombre(),f.getApellidos(),f.getEdad(), f.getDorsal());
-            System.out.printf("  %d            %s                     %s                   %d       %s %n",getListf().get(i).getId(),getListf().get(i).getNombre(),getListf().get(i).getApellidos(),getListf().get(i).getEdad(), getListf().get(i).getDorsal());
+            System.out.printf("%-8d %-18S %-17S %-5d %-8d %-15S %n",getListf().get(i).getId(),getListf().get(i).getNombre(),getListf().get(i).getApellidos(),getListf().get(i).getEdad(), getListf().get(i).getDorsal(),getListf().get(i).getDemarcacion());
         
         }
     }

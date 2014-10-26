@@ -45,11 +45,9 @@ public class Entrenador extends Persona{
 
     
     public void ListarEntrenador(){
-        System.out.printf("   id  |          Nombre         |           Apellido        |     Edad   |      Id Federacion \n");
+        System.out.printf("%-6S | %-15S | %-15S | %-4S | %-15S  %n","ID","Nombre","Apellido","Edad","Id Federacion");
         for (int i = 0; i <getListaE().size(); i++) {
-            //Futbolista f=getListf().get(i);
-            //System.out.printf("  %d            %s                     %s                   %d       %s %n",f.getId(),f.getNombre(),f.getApellidos(),f.getEdad(), f.getDorsal());
-            System.out.printf("  %d            %s                     %s                   %d       %s %n",getListaE().get(i).getId(),getListaE().get(i).getNombre(),getListaE().get(i).getApellidos(),getListaE().get(i).getEdad(), getListaE().get(i).getIdFederacion());
+            System.out.printf("%-8d %-17S %-17S %-6d %-18S %n",getListaE().get(i).getId(),getListaE().get(i).getNombre(),getListaE().get(i).getApellidos(),getListaE().get(i).getEdad(), getListaE().get(i).getIdFederacion());
         
         }
     }
