@@ -30,7 +30,7 @@ public class Masajista extends Persona{
     }
     
     public void ListarMasajista(){
-        System.out.printf("%6S | %15S | %15S | %4S | %15S | %4S %n","ID","Nombre","Apellido","Edad","Titulacion","Años Experienca");
+        System.out.printf("%-6S | %-15S | -15S | %-4S | %-15S | %-4S %n","ID","Nombre","Apellido","Edad","Titulacion","Años Experienca");
         for (int i = 0; i <getListaM().size(); i++) {
             System.out.printf("%-7d %-19S %-18S %-5d %-18S %-4d %n",getListaM().get(i).getId(),getListaM().get(i).getNombre(),getListaM().get(i).getApellidos(),getListaM().get(i).getEdad(), getListaM().get(i).getTitulacion(),getListaM().get(i).getAniosExperiencia());
         
