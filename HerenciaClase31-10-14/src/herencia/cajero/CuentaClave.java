@@ -27,7 +27,7 @@ public class CuentaClave extends Cuenta {
             //que esta definida en la superclase 
             super.extraer(c); 
         }else{ 
-            System.out.println("No hay Fondos Suficientes :("); 
+            System.out.println("No hay Fondos Suficientes :"); 
         } 
     }
 }
